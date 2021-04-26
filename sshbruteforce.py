@@ -26,12 +26,11 @@ def ssh_conection(host, puerto, user, password):
 
 
 parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, 
-                                 description="###############         Aureliohacking        ###############\n" \
-                                             "          Simple guerza bruta ssh\n"
+                                 description="###############         NumaCiberseguridad       ###############\n" \
+                                             "          Simple brute force ssh\n"
                                              "Usar: python ssh.py --host IP --port PORT --U Lista de usuario --P Lista de password\n\n" \
                                              "Demo: xxxxxxxxxxxxxxxxxxxx\n"\
-                       "GitHub:  github.com/aureliohacking\n" \
-                                             "Contact: aureliocheveroni182@gmail.com")
+                       "GitHub:  github.com/numaciberseguridad\n")
 
 parser.add_argument('--host', action = 'store', dest = 'host', required = True, help = 'Digitar la IP')
 parser.add_argument('--port', action = 'store', type=int, dest = 'port', required = True, help = 'Port')
